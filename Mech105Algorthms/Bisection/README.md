@@ -2,6 +2,7 @@ Bisection is a close root finding method
 
 This MATLAB function can be used to find the root of a function (f(x)) when two data points on either side of the function are known
 
+
 Inputs:
 func - a funtion with at least one real root in the form func = @(x)...
 xl - lower bound
