@@ -1,4 +1,4 @@
-#Simpson Intigration MATLAB algorthm
+Simpson Intigration MATLAB algorthm
 
 Imputs:
 x - list of x values
