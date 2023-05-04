@@ -1,4 +1,4 @@
-%function [fX, fY, slope, intercept, Rsquared] = LinReg(x,y)
+function [fX, fY, slope, intercept, Rsquared] = linearRegression(x,y)
 %linearRegression Computes the linear regression of a data set
 
 if length(x) ~= length(y)
@@ -10,9 +10,9 @@ sortedX = x(sortOrder);
 
 yv = sortedY;
 xv = sortedX;
+
 ii = 0;
-iiii = 0;
- 
+
 n = length(xv);
 
 L1 = floor((n+1)/4);
@@ -27,17 +27,6 @@ IQR = Q3-Q1;
 
 LB = Q1 - 1.5 * IQR;
 UB = Q3 + 1.5 * IQR;
-
-for iii = 1:n
-
-    if yv(iii) > LB && yv(iii) < UB
-        iiii = iiii + 1;
-
-    end
-end
-
-yvv = zeros(length(iiii));
-xvv = zeros(length(iiii));
 
 for i = 1:n
     if yv(i) > LB && yv(i) < UB
