@@ -1,15 +1,14 @@
 The False Position is useful for finding roots
 
-
 Inputs:
-func - a funtion with at least one real root in the form func = @(x)...
-xl - lower bound
-xu - upper bound
-es (optional) - stopping criteria
+func - the function being evaluated
+xl - the lower guess
+xu - the upper guess
+es - the desired relative error defaults to 0.0001%
+maxit - the maximum number of iterations to use defaults to 200
 
 Outputs:
-root - zero of the function between lx and lu
-fx - function evaluated at the root estimation
-iter - number of iterations done
-ea - error of the root estimation
-
+root - the estimated root location
+fx - the function evaluated at the root location
+ea - the approximate relative error (%)
+iter - how many iterations were performed
