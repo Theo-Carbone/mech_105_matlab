@@ -1,5 +1,7 @@
 The False Position is useful for finding roots
 
+It works by bracketing by starting with an upper and lower bound bracketing the root then making a secant line using these bounds. This method can be extremely accurate on the first iteration but is also vulnerable to failure if the upper and lower bounds do not closely bracket the root. 
+
 Inputs:
 func - the function being evaluated
 xl - the lower guess
