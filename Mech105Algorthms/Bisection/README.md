@@ -1,4 +1,4 @@
-Bisection MATLAB Algorthm
+# Bisection MATLAB Algorthm
 
 Bisection is a closed root finding method which can be used to approximate the root of complex functions when given upper and lower bounds which bracket the root. The bisection is less efficient than other root finding methods but is very reliable and rarely breaks down.
 
