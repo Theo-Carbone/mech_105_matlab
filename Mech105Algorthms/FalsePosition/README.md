@@ -2,7 +2,7 @@
 
 The False Position is a closed bracketing method which can be used to approximate the root of a function. It does this by starting with an upper and lower bound that brackets the root then making a secant line using these bounds. When used correctly, this method is extremely accurate on the first iteration but is also vulnerable to crashing if the upper and lower bounds do not closely bracket the root.
 
-Inputs:
+Inputs:  
 func - the function being evaluated 
 xl - the lower guess  
 xu - the upper guess
